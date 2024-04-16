@@ -1,0 +1,15 @@
+server:
+  port: 8081
+
+spring:
+  cloud:
+    config:
+      git:
+        uri: https://github.com/Arc251000/waste-configs.git
+        searc-path: configs
+        username: ${GIT-USER}
+        password: ${GIT-PASSWORD}
+security:
+  user:
+    name: root
+    password: s3cr3t
