@@ -10,6 +10,6 @@ spring:
       mvc:
         routes:
           - id: ms-waste_manager
-            uri: http://localhost:8082/waste-manager/1
+            uri: http://localhost:8082
             predicates:
-              - Path=/waste_manager/**
+              - Path=/waste_manager2/**
