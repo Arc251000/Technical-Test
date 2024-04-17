@@ -67,11 +67,10 @@ Endpoints:
           		}
           	]
           }
-    descripción:  este endpoint crea un WasteManagerEntity, admite cualquier atributo del diseño recibido exepto las fechas y el id y devuelvve el id
-    del objeto creado
+    descripción:  este endpoint crea un WasteManagerEntity, admite cualquier atributo del diseño recibido exepto las fechas y el id y devuelvve el id del objeto creado, en el diseño recibido este endpoint no devuelve nada, sin embargo, se modifico puesto que es común que un cliente al crear una entidad necesite recibir el id para funcionar de forma óptima.
     response example: 2
 
-    - Actualizar WasteManagerEntity:
+ - Actualizar WasteManagerEntity:
     url: http://localhost:8080/waste-manager/update
     Metodo: PUT
     body example: {
