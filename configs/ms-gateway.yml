@@ -6,12 +6,10 @@ eureka:
       defaultZone: http://localhost:8099/eureka
 spring:
   cloud:
-    discovery:
-      enabled: true
     gateway:
       mvc:
         routes:
           - id: ms-waste_manager
-            uri: lb://ms-waste_manager
+            uri: http://localhost:8082
             predicates:
               - Path=/waste_manager/**
