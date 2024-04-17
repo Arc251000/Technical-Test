@@ -13,3 +13,7 @@ spring:
             uri: http://localhost:8082
             predicates:
               - Path=/waste-manager/{segment}
+          - id: ms-waste_manager_address
+            uri: http://localhost:8083
+            predicates:
+              - Path=/waste-manager-address/{segment}
