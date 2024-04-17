@@ -1,6 +1,6 @@
 spring:
   application:
-    name: ms-waste_manager
+    name: ms-waste-manager-address
   config:
     import: optional:configserver:http://localhost:8081/
   cloud:

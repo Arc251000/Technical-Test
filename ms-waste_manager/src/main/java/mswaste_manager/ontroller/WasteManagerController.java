@@ -17,6 +17,7 @@ import org.springframework.web.server.ResponseStatusException;
 import static mswaste_manager.model.mapper.WasteManagerMapper.WASTE_MANAGER_MAPPER;
 
 @RestController
+@RequestMapping("/waste-manager")
 public class WasteManagerController {
 
     @Autowired
@@ -30,7 +31,7 @@ public class WasteManagerController {
 
     }
 
-    @PostMapping
+    @PostMapping("/create")
     public ResponseEntity<Long> create(@Valid @RequestBody WasteManagerDTO wasteManagerDto,
                                            BindingResult bindingResult ) throws ResponseStatusException{
 
@@ -41,7 +42,7 @@ public class WasteManagerController {
 
     }
 
-    @PutMapping
+    @PutMapping("/update")
     public ResponseEntity update(@Valid @RequestBody WasteManagerDTO wasteManagerDto,
                                            BindingResult bindingResult) throws ResponseStatusException{
 

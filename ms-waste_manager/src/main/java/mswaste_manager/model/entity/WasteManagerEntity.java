@@ -15,7 +15,7 @@ public class WasteManagerEntity {
     private Long id;
     private String name;
     private String nif;
-   /*private WasteManagerAddressEntity wasteManagerAddressEntity;*/
+    private Long wasteManagerAddressEntityId;
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.REFRESH, mappedBy= "wasteManager")
     private List<WasteCenterAuthorizationEntity>
             listOfWasteCenterAuthorization;

@@ -1,10 +1,9 @@
 spring:
   application:
-    name: ms-waste_manager
+    name: ms-gateway
   config:
     import: optional:configserver:http://localhost:8081/
   cloud:
     config:
       username: root
       password: s3cr3t
-

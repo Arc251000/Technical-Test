@@ -19,6 +19,7 @@ public class WasteManagerDTO {
     private Long id;
     private String name;
     private String nif;
+    private String wasteManagerAddress;
     private List<WasteCenterAuthorizationEntity>
             listOfWasteCenterAuthorization;
     private Boolean isEnabled;

@@ -6,10 +6,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 import java.time.LocalDate;
 
 @SpringBootApplication
+@EnableFeignClients
 public class MsWasteManagerApplication implements CommandLineRunner {
 
     public static void main(String[] args) {
@@ -25,6 +27,7 @@ public class MsWasteManagerApplication implements CommandLineRunner {
         WasteManagerEntity w = new WasteManagerEntity();
         w.setNif("aedghfj");
         w.setName("test");
+        w.setWasteManagerAddressEntityId((long) 1);
         w.setCreatedDate(LocalDate.now());
         w.setLastModifiedDate(LocalDate.now());
         wr.save(w);
