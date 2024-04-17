@@ -12,4 +12,4 @@ spring:
           - id: ms-waste_manager
             uri: http://localhost:8082
             predicates:
-              - Path=/waste_manager2/**
+              - Path=/waste-manager/{segment}
